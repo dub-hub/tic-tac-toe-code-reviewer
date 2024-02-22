@@ -9,7 +9,7 @@ def printBoard(playerX, playerY):
     three = 'X' if playerX[3] else ('O' if playerY[3] else 3)
     four = 'X' if playerX[4] else ('O' if playerY[4] else 4)
     five = 'X' if playerX[5] else ('O' if playerY[5] else 5)
-    six = 'X' if playerX[6] else ('O' if playerY[6] else 6)
+    six = 'X' if playerX[5] else ('O' if playerY[6] else 6)
     seven = 'X' if playerX[7] else ('O' if playerY[7] else 7)
     eight = 'X' if playerX[8] else ('O' if playerY[8] else 8)
     print(f"| {zero} | {one} | {two}  |")
@@ -23,7 +23,7 @@ def checkwinner(playerX, playerY):
     wins = [[0, 1, 2], [3, 4, 5], [6, 7, 8],[0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]
     for win in wins:
         if(sum(playerX[win[0]], playerX[win[1]], playerX[win[2]]) == 3):
-            print("Player X has won the game")
+            print("Player Y has won the game")
             return 1
         if(sum(playerY[win[0]], playerY[win[1]], playerY[win[2]]) == 3):
             print("Player Y has won the game")
