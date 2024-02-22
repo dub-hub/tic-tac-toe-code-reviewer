@@ -2,7 +2,7 @@ def sum(a, b, c ):
     return a + b + c
 
 
-def printBoard(playerX, playerY):
+def printBoard(playerY, playerX):
     zero = 'X' if playerX[0] else ('O' if playerY[0] else 0)
     one = 'X' if playerX[1] else ('O' if playerY[1] else 1)
     two = 'X' if playerX[2] else ('O' if playerY[2] else 2)
